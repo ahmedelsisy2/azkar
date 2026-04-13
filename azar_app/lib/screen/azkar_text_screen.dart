@@ -276,7 +276,7 @@ final PageController _eveningController = PageController();
                   ),
                   child: Center(
                     child: SingleChildScrollView(
-                      physics: const NeverScrollableScrollPhysics(),
+                      physics: const BouncingScrollPhysics(),
                       child: Text(
                         list[index]['text'],
                         textAlign: TextAlign.center,
@@ -312,7 +312,7 @@ final PageController _eveningController = PageController();
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 40),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -345,6 +345,7 @@ final PageController _eveningController = PageController();
                 ),
                 ],
               ),
+              SizedBox(height: 30),
             ],    
           ),
         );

@@ -196,9 +196,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
           ),
           
           const Spacer(),
-          
-          const Text("اضغط على المربعات الخضراء للتصفير", style: TextStyle(color: AppColors.secondaryColor, fontSize: 12)),
-          const SizedBox(height: 20),
+          const SizedBox(height: 30),
         ],
       ),
     );
@@ -214,7 +212,8 @@ class _SebhaScreenState extends State<SebhaScreen> {
         ),
         child: Column(
           children: [
-            Text(title, style: const TextStyle(color: AppColors.cardColor, fontSize: 18, fontWeight: FontWeight.bold)),
+            Text(title, style: const TextStyle(color: AppColors.cardColor,
+             fontSize: 18, fontWeight: FontWeight.bold)),
             const SizedBox(height: 5),
             Text("$value", style: const TextStyle(color: AppColors.cardColor, fontSize: 20)),
           ],
